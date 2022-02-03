@@ -22,18 +22,22 @@ namespace TicTac
             arr[8] = "";
             arr[9] = "";
         }
-        public string  playersChoice()
+        public void  playersChoice()
         {
-            Console.WriteLine("Player1:X and Player2:O");
+            Console.WriteLine("Enter Player1: X and Computer: O");
             string choice = Console.ReadLine();
 
             if (choice == "x") {
-                Console.WriteLine("player 1");
-                return choice; }
+                Console.WriteLine("player1 chance");
+               
+                 }
+            else if(choice == "o")
+            {
+                Console.WriteLine("computer chance");
+            }
             else
             {
-                Console.WriteLine("computere");
-                return choice;
+                Console.WriteLine("invalid input");
             }
             
         }
