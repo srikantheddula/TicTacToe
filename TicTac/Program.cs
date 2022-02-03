@@ -8,7 +8,7 @@ namespace TicTac
         {
             TicTacToeGame tictac = new TicTacToeGame();
             tictac.Board();
-                
+            tictac.playersChoice();
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TicTac
 {
-    internal class TicTacToeGame
+     class TicTacToeGame
     {
         
 
@@ -21,8 +21,21 @@ namespace TicTac
             arr[7] = "";
             arr[8] = "";
             arr[9] = "";
-            arr[10] = "";
+        }
+        public string  playersChoice()
+        {
+            Console.WriteLine("Player1:X and Player2:O");
+            string choice = Console.ReadLine();
 
+            if (choice == "x") {
+                Console.WriteLine("player 1");
+                return choice; }
+            else
+            {
+                Console.WriteLine("computere");
+                return choice;
+            }
+            
         }
     }
 }
